@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<header class="header">
+  <h1>Farmato 💊</h1>
+</header>
+
+<main class="main-container">
+  <section class="intro">
+    <h2>Bienvenido a Farmato</h2>
+    <p>Encuentra información clara y actualizada sobre medicamentos disponibles.</p>
+  </section>
+
+  <section class="search-section">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Buscar medicamento..."
+      onkeyup="buscarMedicamento()"
+      aria-label="Buscar medicamento"
+    >
+  </section>
+
+  <section id="medicamentosContainer" class="medicamentos-grid">
+    <!-- Ejemplo de tarjetas de medicamentos -->
+    <div class="med-card">
+      <img src="{% static 'img/paracetamol.jpg' %}" alt="Paracetamol" loading="lazy">
+      <h3>Paracetamol 500mg</h3>
+      <p>Analgésico y antipirético usado para aliviar dolores y fiebre.</p>
+    </div>
+
+    <div class="med-card">
+      <img src="{% static 'img/ibuprofeno.jpg' %}" alt="Ibuprofeno" loading="lazy">
+      <h3>Ibuprofeno 400mg</h3>
+      <p>Medicamento antiinflamatorio no esteroide (AINE) para dolores leves o moderados.</p>
+    </div>
+
+    <div class="med-card">
+      <img src="{% static 'img/amoxicilina.jpg' %}" alt="Amoxicilina" loading="lazy">
+      <h3>Amoxicilina 500mg</h3>
+      <p>Antibiótico utilizado para tratar infecciones bacterianas.</p>
+    </div>
+
+    <div class="med-card">
+      <img src="{% static 'img/aciclovir.jpg' %}" alt="Amoxicilina" loading="lazy">
+      <h3>Aciclovir 500mg</h3>
+      <p>Antibiótico utilizado para tratar infecciones bacterianas.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 Farmato. Todos los derechos reservados.</p>
+</footer>
+
+<script src="{% static 'js/index.js' %}"></script>
+{% endblock %}

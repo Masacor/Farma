@@ -1,0 +1,91 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* --- HEADER --- */
+.header {
+  background-color: #1976d2;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- MAIN --- */
+.main-container {
+  padding: 20px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#searchInput {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #1976d2;
+  border-radius: 8px;
+}
+
+/* --- GRID --- */
+.medicamentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.med-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.med-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.med-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* --- FOOTER --- */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #1976d2;
+  color: white;
+  margin-top: 40px;
+}
